@@ -141,12 +141,6 @@ a {
   padding: 0 15px;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 450px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 738px;
@@ -160,7 +154,6 @@ a {
 }
 
 .logo {
-  margin-right: 276px;
   color: #2196f3;
   font-family: Raleway;
   font-style: normal;
@@ -509,6 +502,7 @@ a {
 }
 
 .clients__list {
+  width: 270px;
   -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
       flex-basis: calc((100% - 1 * 30px) / 2);
   margin-bottom: 30px;
@@ -528,7 +522,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
@@ -559,13 +552,30 @@ a {
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  .footer__adress {
+    margin-bottom: 60px;
+  }
+}
+
 .footer__social {
-  padding-top: 10px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .footer__social {
+    padding-top: 10px;
+  }
 }
 
 .footer__mailing-list {
   text-align: center;
-  padding-top: 10px;
+}
+
+@media (min-width: 1200px) {
+  .footer__mailing-list {
+    padding-top: 10px;
+  }
 }
 
 .footer__logo {
@@ -627,6 +637,7 @@ a {
 }
 
 .subscription__input {
+  margin-bottom: 20px;
   width: 100%;
   padding-left: 16px;
   height: 50px;
@@ -641,6 +652,16 @@ a {
 }
 
 .button-click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -654,15 +675,6 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   letter-spacing: 0.06em;
 }
 
