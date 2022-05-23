@@ -1,22 +1,22 @@
 .buttons {
-  padding: 94px 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+  padding: 60px 0;
+  // display: flex;
+  // flex-wrap: wrap;
+  // list-style: none;
 
   &__flex li:not(:last-child) {
     margin-right: 8px;
   }
 
   &__flex {
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-left: 0;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
   }
 
   &__list {
+    margin-right: 0;
     padding: 6px 22px;
     font-family: "Roboto";
     cursor: pointer;

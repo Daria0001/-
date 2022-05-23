@@ -272,6 +272,14 @@ a {
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  .peculiarities__flex {
+    width: 738px;
+    -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
+        flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+}
+
 .especially {
   margin-bottom: 30px;
   height: 120px;
@@ -400,6 +408,15 @@ a {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .comand__list {
+    -ms-flex-preferred-size: calc((100% - 1 * 30px) / 3);
+        flex-basis: calc((100% - 1 * 30px) / 3);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .comand__list:not(:last-child) {
@@ -948,13 +965,7 @@ a {
 }
 
 .buttons {
-  padding: 94px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
+  padding: 60px 0;
 }
 
 .buttons__flex li:not(:last-child) {
@@ -962,18 +973,23 @@ a {
 }
 
 .buttons__flex {
-  margin-top: 0;
-  margin-bottom: 50px;
-  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 362px;
+  margin-right: 103px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-left: 0;
 }
 
 .buttons__list {
+  margin-right: 0;
   padding: 6px 22px;
   font-family: "Roboto";
   cursor: pointer;
@@ -1056,6 +1072,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 450px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
