@@ -13,17 +13,17 @@
   }
 })();
 
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector("[burger-open]"),
-//     closeModalBtn: document.querySelector("[burger-close]"),
-//     modal: document.querySelector("[burger]"),
-//   };
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[burger-open]"),
+    closeModalBtn: document.querySelector("[burger-close]"),
+    modal: document.querySelector("[burger]"),
+  };
 
-//   refs.openModalBtn.addEventListener("click", toggleModal);
-//   refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
 
-//   function toggleModal() {
-//     refs.modal.classList.toggle("burger-is-hidden");
-//   }
-// })();
+  function toggleModal() {
+    refs.modal.classList.toggle("burger-is-hidden");
+  }
+})();
