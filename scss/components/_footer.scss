@@ -5,7 +5,7 @@
 
   &__container {
     text-align: center;
-    margin: 0;
+
   }
 
   &__adress {
@@ -16,6 +16,7 @@
 
   &__social {
     margin-bottom: 60px;
+
     @media (min-width: 1200px) {
       padding-top: 10px;
     }

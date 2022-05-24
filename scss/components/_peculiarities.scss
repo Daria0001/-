@@ -12,13 +12,6 @@
   &__flex:not(:last-child) {
     margin-bottom: 30px;
   }
-
-  &__flex {
-    @media (min-width: 768px) {
-      width: 738px;
-      flex-basis: calc((100% - 1 * 30px) / 2);
-    }
-  }
 }
 
 .especially {
