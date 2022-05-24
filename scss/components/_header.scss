@@ -55,6 +55,7 @@
     background: #2196f3;
     border-radius: 2px;
   }
+
   &__text:hover,
   &__text:focus {
     color: #2196f3;
@@ -65,6 +66,7 @@
   &__item:not(:last-child) {
     margin-right: 30px;
   }
+
   &__link {
     color: #757575;
     display: flex;
@@ -76,6 +78,7 @@
     line-height: 1.14;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   &__link:hover,
   &__link:focus {
     color: #2196f3;
@@ -89,5 +92,7 @@
 
 .nav,
 .contact {
-  display: none;
+  // @media (max-width: 767.95px) {
+  //   display: none;
+  // }
 }
